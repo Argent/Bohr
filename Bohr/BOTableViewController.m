@@ -37,6 +37,13 @@
 	[self setup];
 }
 
+-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        [self commonInit];
+    }
+    return self;
+}
+
 - (instancetype)initWithStyle:(UITableViewStyle)style {
 	if (self = [super initWithStyle:style]) {
 		[self commonInit];
